@@ -1,0 +1,213 @@
+{
+ "customers": [
+  {
+   "id": "u3rr80j",
+   "name": "indes cafe",
+   "industry": "Business",
+   "deal": "won",
+   "value": 0
+  },
+  {
+   "id": "74pieg1",
+   "name": "AI solutions",
+   "industry": "AI",
+   "deal": "lost",
+   "value": 0
+  }
+ ],
+ "interactions": [
+  {
+   "id": "7ccgzo6",
+   "cid": "u3rr80j",
+   "type": "call",
+   "text": "they wanted a dynamic attractive ui in low budget",
+   "outcome": "won",
+   "date": "2026-09-29T16:00:53.274Z",
+   "extracted": {
+    "summary": "Customer wants a dynamic, attractive UI while staying within a low budget.",
+    "objections": [
+     "Low budget may restrict feature implementation."
+    ],
+    "buying_signals": [
+     "Interest in a dynamic, attractive UI."
+    ],
+    "pain_points": [
+     "Need for a dynamic UI with limited budget."
+    ],
+    "decision_makers": [],
+    "preferences": [
+     "Dynamic UI",
+     "Attractive UI",
+     "Low budget"
+    ]
+   }
+  },
+  {
+   "id": "53f2xos",
+   "cid": "74pieg1",
+   "type": "meeting",
+   "text": "they were happy when we built a website which was working based on agents using langgraph\nbut we failed in deploying it corretly",
+   "outcome": "lost",
+   "date": "2026-09-29T16:03:13.770Z",
+   "extracted": {
+    "summary": "They were happy with the website built using agents and LangGraph, but deployment was not done correctly.",
+    "objections": [
+     "Failed deployment of the website."
+    ],
+    "buying_signals": [
+     "Positive reaction to the website built with agents using LangGraph."
+    ],
+    "pain_points": [
+     "Issues with correctly deploying the website."
+    ],
+    "decision_makers": [],
+    "preferences": [
+     "Preference for solutions using agents and LangGraph."
+    ]
+   }
+  },
+  {
+   "id": "zorgk38",
+   "cid": "u3rr80j",
+   "type": "call",
+   "text": "Pilot at first warehouse kicked off. Raj said the phased plan removed his main worry; Dana signed the full contract without asking for a discount.",
+   "outcome": "won",
+   "date": "2026-09-29T16:04:33.932Z",
+   "extracted": {
+    "summary": "Pilot launched at the first warehouse; Raj confirmed the phased plan alleviated his main concern, and Dana signed the full contract without requesting a discount.",
+    "objections": [
+     "Raj's main worry about the phased plan"
+    ],
+    "buying_signals": [
+     "Raj accepted the phased plan",
+     "Dana signed the full contract without asking for a discount"
+    ],
+    "pain_points": [
+     "Raj's main worry about implementation"
+    ],
+    "decision_makers": [
+     "Raj",
+     "Dana"
+    ],
+    "preferences": [
+     "Raj prefers a phased implementation",
+     "Dana prefers a full contract without discounts"
+    ]
+   }
+  },
+  {
+   "id": "6k89wao",
+   "cid": "u3rr80j",
+   "type": "call",
+   "text": "Pilot at first warehouse kicked off. Raj said the phased plan removed his main worry; Dana signed the full contract without asking for a discount.",
+   "outcome": "won",
+   "date": "2026-09-29T16:23:17.373Z",
+   "extracted": {
+    "summary": "The pilot at the first warehouse was launched; Raj said the phased plan removed his main worry, and Dana signed the full contract without requesting a discount.",
+    "objections": [
+     "Raj’s main worry about the implementation approach"
+    ],
+    "buying_signals": [
+     "Raj confirmed the phased plan alleviated his concern",
+     "Dana signed the full contract without asking for a discount"
+    ],
+    "pain_points": [
+     "Raj’s main worry about the rollout"
+    ],
+    "decision_makers": [
+     "Raj",
+     "Dana"
+    ],
+    "preferences": [
+     "Raj prefers a phased implementation",
+     "Dana prefers a full‑price contract without discounts"
+    ]
+   }
+  }
+ ],
+ "beliefs": {
+  "u3rr80j": [
+   {
+    "key": "customer_status",
+    "text": "Indes Cafe is a won customer",
+    "confidence": 100,
+    "evidence": [
+     "Indes Cafe is a won customer.",
+     "The sales interaction with Indes Cafe resulted in a won deal.",
+     "The sales deal with indes cafe was won."
+    ],
+    "next_action": "continue account management and explore upsell opportunities",
+    "history": [
+     {
+      "t": "2026-09-29T16:00:58.518Z",
+      "c": 95
+     },
+     {
+      "t": "2026-09-29T16:04:38.858Z",
+      "c": 100
+     },
+     {
+      "t": "2026-09-29T16:23:22.495Z",
+      "c": 100
+     }
+    ]
+   },
+   {
+    "key": "ui_need",
+    "text": "Indes Cafe needs a dynamic UI but has limited budget",
+    "confidence": 100,
+    "evidence": [
+     "Indes Cafe requires a dynamic UI but operates under a limited budget.",
+     "Indes Cafe requested a dynamic and attractive UI, constrained by a limited budget."
+    ],
+    "next_action": "design a cost‑effective dynamic UI solution within budget",
+    "history": [
+     {
+      "t": "2026-09-29T16:00:58.518Z",
+      "c": 90
+     },
+     {
+      "t": "2026-09-29T16:04:38.858Z",
+      "c": 100
+     },
+     {
+      "t": "2026-09-29T16:23:22.495Z",
+      "c": 100
+     }
+    ]
+   }
+  ],
+  "74pieg1": [
+   {
+    "key": "proj_loss_deployment",
+    "text": "The AI solutions project was lost because the website was not deployed correctly",
+    "confidence": 90,
+    "evidence": [
+     "project lost due to deployment failure"
+    ],
+    "next_action": "Improve deployment procedures for AI solutions projects",
+    "history": [
+     {
+      "t": "2026-09-29T16:03:20.932Z",
+      "c": 90
+     }
+    ]
+   },
+   {
+    "key": "client_satisfaction_langgraph",
+    "text": "The client was satisfied with the website built using LangGraph agents for AI solutions",
+    "confidence": 95,
+    "evidence": [
+     "client satisfied with LangGraph-built website"
+    ],
+    "next_action": "Use LangGraph agents in future AI solutions proposals",
+    "history": [
+     {
+      "t": "2026-09-29T16:03:20.932Z",
+      "c": 95
+     }
+    ]
+   }
+  ]
+ }
+}
