@@ -110,6 +110,6 @@ $('#nr').innerHTML=n.beliefs.map(b=>{const h=b.history,p=h.length>1?h[h.length-2
 }catch(x){$('#cmp').innerHTML=fail(x)}}}catch(e){a.innerHTML=fail(e)}}
 
 function mem(){$('#app').innerHTML=`<h1>Team memory</h1><p class="sub">Search everything the team has ever learned. It stays when a salesperson leaves.</p><div class="card"><div class="row"><input id="ms" placeholder="e.g. implementation concerns"><button class="p" id="mb">Search</button></div><div id="mr"></div></div>`;
-const f=async()=>{const q=$('#ms').value.trim();if(!q)return;$('#mr').innerHTML=busy('Searching Hindsight…');try{const r=await api('/memory/search?q='+encodeURIComponent(q));$('#mr').innerHTML=r.length?r.map(m=>`<div class="item">${esc(m.text)}<div class="mut">${esc(m.type||'memory')}${m.date?' · '+String(m.date).slice(0,10):''}</div></div>`).join(''):'<div class="empty">No matching memories.</div>'}catch(e){$('#mr').innerHTML=fail(e)}};$('#mb').onclick=f;$('#ms').onkeydown=e=>e.key==='Enter'&&f()}
+const f=async()=>{const q=$('#ms').value.trim();if(!q)return;$('#mr').innerHTML=busy('Searching Hindsight…');try{const r=await api('/memory/search?q='+encodeURIComponent(q));$('#mr').innerHTML=r.length?r.map(m=>`<div class="item">${esc(m.text)}<div class="mut">${esc(m.type||'memory')}${m.date?' · '+String(m.date).slice(0,10):''}</div></div>`).join(''):'<div class="empty">No matching memories.</div>'}catch(e){$('#mr').innerHTML=fail(e)}};$('#mb').onclick=f;$('#ms').onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();f()}}}
 go('dash');
 </script></body></html>
