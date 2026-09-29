@@ -108,4 +108,4 @@ app.post('/api/demo/seed', wrap(async () => {
 }));
 app.post('/api/demo/new-evidence', wrap(async q => logInteraction(q.body.customerId, { type: 'call', text: 'Pilot at first warehouse kicked off. Raj said the phased plan removed his main worry; Dana signed the full contract without asking for a discount.', outcome: 'won' })));
 
-app.listen(PORT, () => console.log(`RevenueBrain on http://localhost:${PORT}`));
+app.listen(PORT, '0.0.0.0', () => console.log(`BizMind listening on 0.0.0.0:${PORT}`));
